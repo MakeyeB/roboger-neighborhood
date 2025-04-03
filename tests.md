@@ -7,10 +7,18 @@ const toFind = 2;
 hasNumber(findFrom, toFind);
 Expected Output: true
 
+Describe: changeNumber()
+
+Test: "It should return "Won't you be my neighbor?" if the number 13 is provided."
+Code:
+const input = 13;
+changeNumber(input);
+Expected Output: "Won't you be my neighbor?"
+
 Describe: convertNumber()
 
 Test: "It should return false if the number provided is less than or equal to 0."
 Code:
-const input = 0
-convertNumber(input)
+const input = 0;
+convertNumber(input);
 Expected Output: false
