@@ -5,7 +5,7 @@ function hasNumber(fullNumber, number) {
 }
 
 function changeNumber(number) {
-  if (number === 13) {
+  if (number === 13 || number === 32) {
     return "Won't you be my neighbor?";
   } else if (number === 21) {
     return "Boop";

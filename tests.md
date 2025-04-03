@@ -21,6 +21,12 @@ const input = 21;
 changeNumber(input);
 Expected Output: 'Boop'
 
+Test: "It should return "Won't you be my neighbor?" if the number 32 is provided."
+Code:
+const input = 32;
+changeNumber(input);
+Expected Output: "Won't you be my neighbor?"
+
 Describe: convertNumber()
 
 Test: "It should return false if the number provided is less than or equal to 0."
