@@ -7,6 +7,15 @@ const toFind = 2;
 hasNumber(findFrom, toFind);
 Expected Output: true
 
+Describe: replaceLettersInString()
+
+Test: "It should return the second string provided repeated for each letter in the first string provided."
+Code:
+const firstWord = "Hello!";
+const convertTo = ".";
+replaceLettersInString(firstWord, convertTo);
+Expected Output: '......'
+
 Describe: changeNumber()
 
 Test: "It should return "Won't you be my neighbor?" if the number 13 is provided."
