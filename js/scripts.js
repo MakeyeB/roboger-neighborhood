@@ -13,6 +13,8 @@ function changeNumber(number) {
     return "Won't you be my neighbor?";
   } else if (number === 21) {
     return "Boop";
+  } else if (hasNumber(number, "1")) {
+    return replaceLettersInString(number.toString(), "Beep!");
   }
 }
 

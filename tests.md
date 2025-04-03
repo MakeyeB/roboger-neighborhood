@@ -36,6 +36,12 @@ const input = 32;
 changeNumber(input);
 Expected Output: "Won't you be my neighbor?"
 
+Test: "It should return 'Beep!' repeated per each number provided if the number has 1 in it."
+Code:
+const input = 11;
+changeNumber(input);
+Expected Output: 'Beep!Beep!'
+
 Describe: convertNumber()
 
 Test: "It should return false if the number provided is less than or equal to 0."
