@@ -42,6 +42,18 @@ const input = 11;
 changeNumber(input);
 Expected Output: 'Beep!Beep!'
 
+Test: "It should return 'Boop!' repeated per each number provided if the number has 2 in it."
+Code:
+const input = 22;
+changeNumber(input);
+Expected Output: 'Boop!Boop!'
+
+Test: "It should return 'Won't you be my neighbor?' repeated per each number provided if the number has 3 in it."
+Code:
+const input = 33;
+changeNumber(input);
+Expected Output: "Won't you be my neighbor?Won't you be my neighbor?"
+
 Describe: convertNumber()
 
 Test: "It should return false if the number provided is less than or equal to 0."

@@ -15,6 +15,10 @@ function changeNumber(number) {
     return "Boop";
   } else if (hasNumber(number, "1")) {
     return replaceLettersInString(number.toString(), "Beep!");
+  } else if (hasNumber(number, "2")) {
+    return replaceLettersInString(number.toString(), "Boop!");
+  } else if (hasNumber(number, "3")) {
+    return replaceLettersInString(number.toString(), "Won't you be my neighbor?")
   }
 }
 
