@@ -54,6 +54,12 @@ const input = 33;
 changeNumber(input);
 Expected Output: "Won't you be my neighbor?Won't you be my neighbor?"
 
+Test: "It should return a string version of the number provided if the number meets none of the requirements."
+Code:
+const input = 47;
+changeNumber(input);
+Expected Output: '47'
+
 Describe: convertNumber()
 
 Test: "It should return false if the number provided is less than or equal to 0."
