@@ -27,4 +27,9 @@ function convertNumber(number) {
   if (number <= 0) {
     return false;
   }
+  const convertedNumbers = [];
+  for (let index = 0; index <= number; index ++) {
+    convertedNumbers.push(changeNumber(index));
+  }
+  return convertedNumbers;
 }

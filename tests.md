@@ -67,3 +67,9 @@ Code:
 const input = 0;
 convertNumber(input);
 Expected Output: false
+
+Test: "It should return an array of values returned by the changeNumber function between 0 and the number provided."
+Code:
+const input = 5;
+convertNumber(input);
+Expected Output: ['0', 'Beep!', "Won't you be my neighbor?", '4', '5']
