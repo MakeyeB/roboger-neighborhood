@@ -1,0 +1,12 @@
+#output {
+  border: 1px solid black;
+  margin-top: 8px;
+}
+
+#name-input {
+  margin-left: 14px;
+}
+
+.padding-left {
+  padding-left: 20px;
+}

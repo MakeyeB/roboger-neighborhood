@@ -1,5 +1,7 @@
 // business logic
 
+let neighborName = null;
+
 function hasNumber(fullNumber, number) {
   return fullNumber.toString().includes(number);
 }
@@ -10,6 +12,9 @@ function replaceLettersInString(baseString, replaceWith) {
 
 function changeNumber(number) {
   if (number === 13 || number === 32) {
+    if (neighborName) {
+      return "Won't you be my neighbor, " + neighborName + "?";
+    }
     return "Won't you be my neighbor?";
   } else if (number === 21) {
     return "Boop";
@@ -18,6 +23,9 @@ function changeNumber(number) {
   } else if (hasNumber(number, "2")) {
     return replaceLettersInString(number.toString(), "Boop!");
   } else if (hasNumber(number, "3")) {
+    if (neighborName) {
+      return replaceLettersInString(number.toString(), "Won't you be my neighbor, " + neighborName + "?");
+    }
     return replaceLettersInString(number.toString(), "Won't you be my neighbor?");
   }
   return number.toString();
@@ -48,10 +56,12 @@ function createNewOutput() {
 
 function onSubmit(event) {
   event.preventDefault();
+  neighborName = document.getElementById("name-input").value;
   const convertedInput = convertNumber(document.getElementById("input").value);
   const newOutput = createNewOutput();
   if (!convertedInput) {
     const warning = document.createElement("p");
+    warning.classList.add("padding-left");
     warning.innerText = "Input a valid number.";
     newOutput.append(warning);
     return;
