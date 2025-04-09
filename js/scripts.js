@@ -76,5 +76,5 @@ function onSubmit(event) {
 }
 
 window.addEventListener("load", function() {
-  this.document.querySelector("form").addEventListener("submit", onSubmit)
+  this.document.querySelector("form").addEventListener("submit", onSubmit);
 });

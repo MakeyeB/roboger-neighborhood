@@ -4,9 +4,17 @@
 }
 
 #name-input {
-  margin-left: 14px;
+  margin-left: 18px;
 }
 
 .padding-left {
   padding-left: 20px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.no-margin {
+  margin: 0px 0px 0px 0px;
 }
