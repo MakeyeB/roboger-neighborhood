@@ -9,41 +9,23 @@ Expected Output: true
 
 Describe: changeNumber()
 
-Test: "It should return "Won't you be my neighbor?" if the number 13 is provided."
-Code:
-const input = 13;
-changeNumber(input);
-Expected Output: "Won't you be my neighbor?"
-
-Test: "It should return 'Boop' if the number 21 is provided."
-Code:
-const input = 21;
-changeNumber(input);
-Expected Output: 'Boop'
-
-Test: "It should return "Won't you be my neighbor?" if the number 32 is provided."
-Code:
-const input = 32;
-changeNumber(input);
-Expected Output: "Won't you be my neighbor?"
-
-Test: "It should return 'Beep!' repeated per each number provided if the number has 1 in it."
+Test: "It should return 'Beep!' if the number has 1 in it."
 Code:
 const input = 11;
 changeNumber(input);
-Expected Output: 'Beep!Beep!'
+Expected Output: 'Beep!'
 
-Test: "It should return 'Boop!' repeated per each number provided if the number has 2 in it."
+Test: "It should return 'Boop!' if the number has 2 in it."
 Code:
 const input = 22;
 changeNumber(input);
-Expected Output: 'Boop!Boop!'
+Expected Output: 'Boop!'
 
-Test: "It should return 'Won't you be my neighbor?' repeated per each number provided if the number has 3 in it."
+Test: "It should return 'Won't you be my neighbor?' if the number has 3 in it."
 Code:
 const input = 33;
 changeNumber(input);
-Expected Output: "Won't you be my neighbor?Won't you be my neighbor?"
+Expected Output: "Won't you be my neighbor?"
 
 Test: "It should return a string version of the number provided if the number meets none of the requirements."
 Code:
