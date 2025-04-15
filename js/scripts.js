@@ -6,10 +6,6 @@ function hasNumber(fullNumber, number) {
   return fullNumber.toString().includes(number);
 }
 
-function replaceLettersInString(baseString, replaceWith) {
-  return replaceWith.repeat(baseString.length);
-}
-
 function changeNumber(number) {
   if (hasNumber(number, "3")) {
     if (neighborName) {
