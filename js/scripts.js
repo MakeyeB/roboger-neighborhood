@@ -11,22 +11,15 @@ function replaceLettersInString(baseString, replaceWith) {
 }
 
 function changeNumber(number) {
-  if (number === 13 || number === 32) {
+  if (hasNumber(number, "3")) {
     if (neighborName) {
       return "Won't you be my neighbor, " + neighborName + "?";
     }
     return "Won't you be my neighbor?";
-  } else if (number === 21) {
-    return "Boop";
-  } else if (hasNumber(number, "1")) {
-    return replaceLettersInString(number.toString(), "Beep!");
   } else if (hasNumber(number, "2")) {
-    return replaceLettersInString(number.toString(), "Boop!");
-  } else if (hasNumber(number, "3")) {
-    if (neighborName) {
-      return replaceLettersInString(number.toString(), "Won't you be my neighbor, " + neighborName + "?");
-    }
-    return replaceLettersInString(number.toString(), "Won't you be my neighbor?");
+    return "Boop!"
+  } else if (hasNumber(number, "1")) {
+    return "Beep!"
   }
   return number.toString();
 }
@@ -66,9 +59,19 @@ function onSubmit(event) {
     newOutput.append(warning);
     return;
   }
-  const newList = document.createElement("ul");
-  convertedInput.forEach(function(value) {
+  let newList = null;
+  let showNumber = false;
+  if (document.getElementById("show-number").checked) {
+    newList = document.createElement("ol");
+    showNumber = true;
+  } else {
+    newList = document.createElement("ul");
+  }
+  convertedInput.forEach(function(value, index) {
     const newItem = document.createElement("li");
+    if (showNumber) {
+      newItem.value = index;
+    }
     newItem.innerText = value;
     newList.append(newItem);
   });
